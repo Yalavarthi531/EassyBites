@@ -1,0 +1,25 @@
+# Tasks
+
+- [x] Research reference websites for design patterns <!-- id: 0 -->
+- [x] Create Implementation Plan <!-- id: 1 -->
+- [x] Initialize Project (Static HTML/CSS) <!-- id: 2 -->
+- [x] Implement Landing Page Structure <!-- id: 3 -->
+    - [x] Header & Navigation <!-- id: 4 -->
+    - [x] Hero Section (Visuals + Tagline) <!-- id: 5 -->
+    - [x] About/Mission Section <!-- id: 6 -->
+    - [x] Product Showcase (Edible Cups) <!-- id: 7 -->
+    - [x] Features/Benefits (Eco-friendly, Tasty) <!-- id: 8 -->
+    - [x] Footer <!-- id: 9 -->
+- [x] Apply Premium Styling (CSS) <!-- id: 10 -->
+    - [x] Typography & Color Palette <!-- id: 11 -->
+    - [x] Animations & Interactivity <!-- id: 12 -->
+    - [x] Responsive Design <!-- id: 13 -->
+- [x] Upgrade to Premium Nature Design <!-- id: 15 -->
+    - [x] Generate Custom Assets (Hero, Product, Features) <!-- id: 16 -->
+    - [x] Refine CSS for "Eco-Friendly/Nature" Vibe <!-- id: 17 -->
+    - [x] Integrate Assets into HTML <!-- id: 18 -->
+- [ ] Migrate to Modern Stack (Vite/React) <!-- id: 19 -->
+    - [ ] **USER ACTION**: Install Node.js <!-- id: 20 -->
+    - [ ] Initialize Vite Project <!-- id: 21 -->
+    - [ ] Port Static Code to React Components <!-- id: 22 -->
+- [ ] Verify & Polish <!-- id: 14 -->
