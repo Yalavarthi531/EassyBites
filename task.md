@@ -23,3 +23,9 @@
     - [ ] Initialize Vite Project <!-- id: 21 -->
     - [ ] Port Static Code to React Components <!-- id: 22 -->
 - [ ] Verify & Polish <!-- id: 14 -->
+
+- [x] Backend Integration (Supabase) <!-- id: 23 -->
+    - [x] Install Supabase Client <!-- id: 24 -->
+    - [x] Configure Supabase Client (`src/lib/supabase.js`) <!-- id: 25 -->
+    - [x] Create Auth Context (`src/context/AuthContext.jsx`) <!-- id: 26 -->
+    - [x] Integrate Auth with `Auth.jsx` <!-- id: 27 -->
