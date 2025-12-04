@@ -18,14 +18,19 @@
     - [x] Generate Custom Assets (Hero, Product, Features) <!-- id: 16 -->
     - [x] Refine CSS for "Eco-Friendly/Nature" Vibe <!-- id: 17 -->
     - [x] Integrate Assets into HTML <!-- id: 18 -->
-- [ ] Migrate to Modern Stack (Vite/React) <!-- id: 19 -->
-    - [ ] **USER ACTION**: Install Node.js <!-- id: 20 -->
-    - [ ] Initialize Vite Project <!-- id: 21 -->
-    - [ ] Port Static Code to React Components <!-- id: 22 -->
-- [ ] Verify & Polish <!-- id: 14 -->
+- [x] Migrate to Modern Stack (Vite/React) <!-- id: 19 -->
+    - [x] **USER ACTION**: Install Node.js <!-- id: 20 -->
+    - [x] Initialize Vite Project <!-- id: 21 -->
+    - [x] Port Static Code to React Components <!-- id: 22 -->
+- [x] Verify & Polish <!-- id: 14 -->
 
 - [x] Backend Integration (Supabase) <!-- id: 23 -->
     - [x] Install Supabase Client <!-- id: 24 -->
-    - [x] Configure Supabase Client (`src/lib/supabase.js`) <!-- id: 25 -->
-    - [x] Create Auth Context (`src/context/AuthContext.jsx`) <!-- id: 26 -->
+    - [x] Configure Supabase Client (`src/supabaseClient.js`) <!-- id: 25 -->
     - [x] Integrate Auth with `Auth.jsx` <!-- id: 27 -->
+
+- [x] AI Chatbot Assistant <!-- id: 28 -->
+    - [x] Create Basic Chatbot Component <!-- id: 29 -->
+    - [x] Implement "Futuristic & Funny" Persona <!-- id: 30 -->
+    - [x] Add Knowledge Base (Products, FAQ) <!-- id: 31 -->
+    - [x] Polish UI (Animations, Glassmorphism) <!-- id: 32 -->

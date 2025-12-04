@@ -25,23 +25,45 @@ const Chatbot = () => {
         setMessages(prev => [...prev, userMessage]);
         setInput('');
 
-        // Simulate AI response (Mock logic for now)
+        // Eassy Bot Persona Logic 🤖
         setTimeout(() => {
-            let botResponse = "I'm still learning! 🧠 Try asking about 'flavors' or 'shelf life'.";
+            let botResponse = "Beep boop! 🤖 My circuits are confused. Try asking about 'flavors', 'ingredients', or 'sustainability'.";
             const lowerInput = userMessage.text.toLowerCase();
 
-            if (lowerInput.includes('flavor') || lowerInput.includes('taste')) {
-                botResponse = "They taste like a crunchy vanilla biscuit! 🍪 Delicious with coffee.";
-            } else if (lowerInput.includes('hot') || lowerInput.includes('heat')) {
-                botResponse = "Don't worry, I can handle the heat! 🔥 I stay crispy for 40 minutes with hot drinks.";
-            } else if (lowerInput.includes('price') || lowerInput.includes('cost')) {
-                botResponse = "Check out our Shop page for the latest deals! 💸";
+            // Knowledge Base
+            if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('hey')) {
+                botResponse = "Greetings, human! 🖖 I am Eassy Bot, your edible hydration assistant. Ready to sip and snack?";
+            } else if (lowerInput.includes('who are you')) {
+                botResponse = "I'm the future of drinking! 🥤 Well, technically I'm a chatbot, but my cousins are delicious edible cups.";
+            } else if (lowerInput.includes('flavor') || lowerInput.includes('taste')) {
+                botResponse = "Imagine a crunchy vanilla biscuit had a baby with an ice cream cone. 🍪 That's us! Delicious with coffee, tea, or just by itself.";
+            } else if (lowerInput.includes('ingredient') || lowerInput.includes('made of')) {
+                botResponse = "We are made of 100% natural grains and love! 🌾 No nasties, just tasty, vegan-friendly goodness.";
+            } else if (lowerInput.includes('hot') || lowerInput.includes('heat') || lowerInput.includes('coffee')) {
+                botResponse = "I can handle the heat! 🔥 I stay crispy for up to 40 minutes with hot drinks. Longer than most relationships! 😂";
+            } else if (lowerInput.includes('cold') || lowerInput.includes('ice')) {
+                botResponse = "I stay crunchy for hours with cold drinks! ❄️ Perfect for iced coffee or a cheeky cocktail.";
+            } else if (lowerInput.includes('price') || lowerInput.includes('cost') || lowerInput.includes('buy')) {
+                botResponse = "Invest in your planet (and your tummy)! 💸 Check out our Shop page for the latest deals.";
+            } else if (lowerInput.includes('shipping') || lowerInput.includes('deliver')) {
+                botResponse = "We teleport... kidding! 🚀 We ship worldwide. Standard delivery takes 3-5 business days.";
+            } else if (lowerInput.includes('shelf life') || lowerInput.includes('expire')) {
+                botResponse = "I stay fresh for 12 months if you keep me in a cool, dry place. But let's be real, you'll eat me before then! 😉";
             } else if (lowerInput.includes('joke')) {
-                botResponse = "Why did the coffee file a police report? It got mugged! ☕😂";
+                const jokes = [
+                    "Why did the coffee file a police report? It got mugged! ☕😂",
+                    "What do you call a sad cup? A little muggy. 🌧️",
+                    "Why don't cups share secrets? Because they might spill the beans! 🫘"
+                ];
+                botResponse = jokes[Math.floor(Math.random() * jokes.length)];
+            } else if (lowerInput.includes('single') || lowerInput.includes('date')) {
+                botResponse = "I'm married to the mission of saving the planet! 🌍💍 But I'm flattered.";
+            } else if (lowerInput.includes('thank')) {
+                botResponse = "You are welcome, eco-warrior! 🌱 Keep saving the world, one bite at a time.";
             }
 
             setMessages(prev => [...prev, { text: botResponse, sender: 'bot' }]);
-        }, 1000);
+        }, 800);
     };
 
     return (
