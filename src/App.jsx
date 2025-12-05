@@ -10,26 +10,31 @@ import Auth from './pages/Auth';
 import FAQ from './pages/FAQ';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Profile from './pages/Profile';
+import { AuthProvider } from './context/AuthContext';
 import './index.css';
 
 function App() {
     return (
-        <Router>
-            <div className="app">
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/shop" element={<Shop />} />
-                    <Route path="/cart" element={<Cart />} />
-                    <Route path="/auth" element={<Auth />} />
-                    <Route path="/faq" element={<FAQ />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contact" element={<Contact />} />
-                </Routes>
-                <Chatbot />
-                <Footer />
-            </div>
-        </Router>
+        <AuthProvider>
+            <Router>
+                <div className="app">
+                    <Navbar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/shop" element={<Shop />} />
+                        <Route path="/cart" element={<Cart />} />
+                        <Route path="/auth" element={<Auth />} />
+                        <Route path="/faq" element={<FAQ />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/profile" element={<Profile />} />
+                    </Routes>
+                    <Chatbot />
+                    <Footer />
+                </div>
+            </Router>
+        </AuthProvider>
     );
 }
 
