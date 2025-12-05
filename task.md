@@ -64,3 +64,8 @@
     - [x] Wrap App with `AuthProvider` <!-- id: 54 -->
     - [x] Update Navbar to Show User/Logout <!-- id: 55 -->
     - [x] Create Profile Page <!-- id: 56 -->
+
+- [x] Prepare for Netlify Deployment <!-- id: 57 -->
+    - [x] Cleanup Unused Files (`test_supabase_setup.js`, etc.) <!-- id: 58 -->
+    - [x] Create `netlify.toml` for Redirects <!-- id: 59 -->
+    - [x] Verify Build Locally <!-- id: 60 -->

@@ -55,13 +55,23 @@ const Profile = () => {
                     )}
                 </div>
 
-                <button
-                    onClick={handleLogout}
-                    className="btn-primary"
-                    style={{ width: '100%', background: '#d32f2f', border: 'none' }}
-                >
-                    Logout
-                </button>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                    <button
+                        className="btn-secondary"
+                        style={{ width: '100%', justifyContent: 'center' }}
+                        onClick={() => alert('Order History feature coming soon!')}
+                    >
+                        My Orders
+                    </button>
+
+                    <button
+                        onClick={handleLogout}
+                        className="btn-primary"
+                        style={{ width: '100%', background: '#d32f2f', border: 'none', justifyContent: 'center' }}
+                    >
+                        Logout
+                    </button>
+                </div>
             </div>
         </div>
     );
