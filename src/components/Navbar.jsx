@@ -30,8 +30,6 @@ const Navbar = () => {
                     <li><Link to="/shop" onClick={closeMenu}>Shop</Link></li>
                     <li><Link to="/about" onClick={closeMenu}>Our Story</Link></li>
                     <li><Link to="/faq" onClick={closeMenu}>FAQ</Link></li>
-                    {/* Show Contact Us in mobile menu since button is hidden */}
-                    <li className="mobile-only"><Link to="/contact" onClick={closeMenu}>Contact Us</Link></li>
                 </ul>
 
                 {/* Right: Actions */}
