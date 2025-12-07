@@ -69,3 +69,9 @@
     - [x] Cleanup Unused Files (`test_supabase_setup.js`, etc.) <!-- id: 58 -->
     - [x] Create `netlify.toml` for Redirects <!-- id: 59 -->
     - [x] Verify Build Locally <!-- id: 60 -->
+
+- [x] Implement Mobile OTP Login <!-- id: 61 -->
+    - [x] Create Design Specification Document <!-- id: 62 -->
+    - [x] Update `Auth.jsx` with Mobile/Email Tabs <!-- id: 63 -->
+    - [x] Implement `signInWithOtp` Logic <!-- id: 64 -->
+    - [x] Implement `verifyOtp` Logic <!-- id: 65 -->
